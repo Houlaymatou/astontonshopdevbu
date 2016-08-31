@@ -1,0 +1,5 @@
+name: Chooses for AstonShop
+type: module
+description: Chooses feature for AstonShop web site
+core: 8.x
+package: AstonShop

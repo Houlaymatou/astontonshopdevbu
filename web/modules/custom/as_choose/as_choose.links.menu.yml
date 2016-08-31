@@ -1,0 +1,7 @@
+as_choose.list:
+  title: 'Chaussures'
+  description: 'Liste des Chaussures'
+  route_name: as_choose.default_controller_listingPage
+  weight: 100
+  #If menu_name is omitted, the "Tools" menu will be used.
+  menu_name: main

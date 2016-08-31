@@ -1,0 +1,8 @@
+
+as_choose.default_controller_listingPage:
+  path: '/product/chaussure'
+  defaults:
+    _controller: '\Drupal\as_choose\Controller\DefaultController::listingPage'
+    _title: 'Listing de Chaussures'
+  requirements:
+    _permission: 'access content'

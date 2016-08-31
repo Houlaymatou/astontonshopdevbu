@@ -1,0 +1,11 @@
+global-styling:
+  css:
+    theme:
+      Css/style.css: {}
+  js:
+     Js/main.js: {}
+  dependencies:
+    - core/drupal 
+    - core/drupalSettings
+    - core/jquery
+    - core/jquery.once

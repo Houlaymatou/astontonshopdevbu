@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.chooses.body
+        - field.field.node.chooses.field_image
+        - field.field.node.chooses.field_price
+        - field.field.node.chooses.field_quantity
+        - field.field.node.chooses.field_size
+        - field.field.node.chooses.field_storage
+        - image.style.thumbnail
+        - node.type.chooses
+    module:
+        - image
+        - text
+        - user
+id: node.chooses.teaser
+targetEntityType: node
+bundle: chooses
+mode: teaser
+content:
+    body:
+        label: above
+        type: text_summary_or_trimmed
+        weight: 1
+        settings:
+            trim_length: 600
+        third_party_settings: {  }
+    field_image:
+        type: image
+        weight: 0
+        label: hidden
+        settings:
+            image_style: thumbnail
+            image_link: ''
+        third_party_settings: {  }
+    links:
+        weight: 2
+        settings: {  }
+        third_party_settings: {  }
+hidden:
+    field_price: true
+    field_quantity: true
+    field_size: true
+    field_storage: true
